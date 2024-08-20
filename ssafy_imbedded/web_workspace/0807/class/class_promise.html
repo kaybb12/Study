@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // promise는 비동기 처리를 promise
+        // setTimeout -> 콜백함수로 처리되어 있음
+        // promise -> 콜백함수를 해결하기 위해 나온 첫번째 해결 방안
+        // promise를 호출하면 일단 pending상태가 된다
+        // (console로 찍을시 promise pending 상태라고 나온다)
+        // 호출 성공시 fulfilled 상태
+        // 호출 실패시 reject 상태로 처리
+        // pending 대기상태, fulfilled 이행 상태, rejeted 실패 상태,
+        
+        // function promiseSetTimeout(ms) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //         resolve('test1');
+        //     }, ms)  
+        //     }) 
+        // }
+
+        // promiseSetTimeout(1000).then(li => console.log(li))
+        
+        // setTimeout(() => {
+        //     console.log('test');
+        // }, 1000)  
+        /*------------------------------------*/
+        //Promise Chaining
+
+        // function promiseSetTimeout(ms) {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //         resolve('test1');
+        //     }, ms)  
+        //     }) 
+        // }
+
+        // promiseSetTimeout(1000).then(li => {
+        //     console.log(li)
+        //     return li + 1;
+        // }).then(li2 => {
+        //     console.log(li2)
+        // })
+
+        //대부분의 경우는 이미 promise화 된 비동기 함수(처리, 통신)을 사용하는 것만 한다.
+        // then -> 성공했을 때, 내가 할 행동(데이터를 뿌려주는 작업)
+        // catch -> 실패했을 때, 내가 할 행동(error alert으로 보여주기)
+    
+    </script>
+</body>
+</html>
