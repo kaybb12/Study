@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+   hello
+   <!-- axios cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    async function getData(){
+      // rest api key를 입력
+      const REST_API_KEY = "573c375f1fc5fb520c1b8d462ed7283f";
+        const url = "https://apis-navi.kakaomobility.com/v1/directions";
+
+        // 경도 먼저 위도 
+        const origin = `127.0396, 37.50136`;
+        const destination = `127.0396, 36.50136`;
+
+        // 헤더
+        const headers = {
+          Authorization : `KakaoAK ${REST_API_KEY}`,
+          "Content-Type" : "application/json"
+        }
+
+        // 필수값 (경도, 위도)
+        const queryParams = new URLSearchParams({
+          origin : origin,
+          destination : destination
+        });
+
+        const requestURL = `${url}?${queryParams}`
+
+      try {
+          const response = await axios.get(requestURL, {headers : headers});
+          console.log(response)
+
+      } catch (error) {
+        
+      }
+    }
+    getData();
+  </script>
+</body>
+</html>
