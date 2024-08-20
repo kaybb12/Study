@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: gray;
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem;
+        }
+
+        .movie {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px black;
+            margin: 1rem;
+            padding: 1rem;
+            width: 200px;
+            text-align: center;
+        }
+
+        .movie img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .movie h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        .movie .rating {
+            color: black;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .movie .overview {
+            font-size: 10px;
+            color: black;
+        }        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Now Playing</h1>
+    </header>
+    <main>
+        <div id="movies" class="movie-list"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const apiKey = '531aec8459cbf8073bc99d7d03699411';
+        const apiURL = 'https://api.themoviedb.org/3/movie/now_playing?api_key=' + apiKey + '&language=ko-KR&page=1';
+
+        axios.get(apiURL)
+            .then(response => {
+                const movies = response.data.results;
+                const movieList = document.getElementById('movies');
+            
+                movies.forEach(movie => {
+                    const movieElement = document.createElement('div');
+                    movieElement.classList.add('movie');
+                
+                    movieElement.innerHTML = `
+                        <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}">
+                        <h2>${movie.title}</h2>
+                        <div class="rating">평점: ${movie.vote_average}</div>
+                        <div class="overview">${movie.overview}</div>
+                    `;
+                
+                    movieList.appendChild(movieElement);
+                });
+            })
+            .catch(error => console.error('error:', error));
+    </script>
+</body>
+</html>
