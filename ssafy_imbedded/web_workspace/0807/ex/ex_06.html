@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .video iframe {
+            width: 80%;
+            height: 200px;
+            border: 1px solid black;
+            margin: 5px;
+        }
+        .card-container > div{
+            margin-top: 20px;
+            font-size: 10px;
+            border: 1px solid black;
+        }
+        .card-wrap > div {
+            font-weight: bold;
+            width: 300px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 10px;
+        }
+        .video-title{
+            font-size: 20px;
+        }
+        .header {
+            font-size: xx-large;
+        }
+        .search {
+            margin-top: 5px;
+            display: flex;
+        }
+        .search >input {
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">비디오 검색</div>
+    <div class="search">
+        <input class="search-text" id="search-value" type="text" placeholder="검색어를 입력하세요">
+        <button class="search-button" onclick="searchVideos()">찾기</button>
+    </div>
+    <div class="card-container"></div>
+
+    <script>
+        const url = "https://www.googleapis.com/youtube/v3";
+        const key = "AIzaSyCDJZzEE71g5ADAtSUMaUSxJpRyfB1WE2A";
+        const cardContainer = document.querySelector(".card-container");
+
+        async function getVideos(word) {
+            try {
+                const response = await axios.get(`${url}/search`, {
+                    params: {
+                        key: key,
+                        part: "snippet",
+                        type: "video",
+                        q: word,
+                        maxResults: 6,
+                    }
+                });
+                const html = response.data.items.reduce((acc, cur) => {
+                    acc += videoComponent(cur);
+                    return acc;
+                }, "");
+                cardContainer.innerHTML = html;
+
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        function searchVideos() {
+            const searchValue = document.getElementById('search-value').value;
+            cardContainer.innerHTML = "";
+            getVideos(searchValue);
+        }
+
+        function videoComponent(data) {
+            return `
+            <div class="card-wrap">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/${data.id.videoId}" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                    <div class="video-title">${data.snippet.title}</div>
+                </div>
+            </div>
+            `;
+        }
+    </script>
+</body>
+</html>
