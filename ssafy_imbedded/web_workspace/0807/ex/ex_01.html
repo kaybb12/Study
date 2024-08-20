@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 콜백 헬
+        console.log("Hi");
+        setTimeout(() => {
+            console.log("First")
+            setTimeout(() => {
+                console.log("Second")
+                setTimeout(() => {
+                    console.log("Third");
+                }, 1000);
+            }, 500);
+        }, 500);
+    </script>
+</body>
+</html>
