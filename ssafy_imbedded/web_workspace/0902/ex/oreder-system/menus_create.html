@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.menus.create</h1>
+    <input class="name-input" type="text" placeholder="메뉴이름" />
+    <br />
+    <input class="description-input" type="text" placeholder="메뉴설명" />
+    <br />
+    <input class="file-input" type="file" />
+    <br />
+    <button class="submit-btn">제출</button>
+    
+    <script type = "module">
+        import { api } from "./app.js";
+        const nameInput = document.querySelector(".name-input");
+        const descriptionInput = document.querySelector(".description-input");
+        const fileInput = document.querySelector(".file-input");
+        const submitBtn = document.querySelector(".submit-btn");
+        submitBtn.addEventListener("click", async () => {
+            await api.menus.create(
+                nameInput.value,
+                descriptionInput.value,
+                fileInput.files[0]
+            );
+        });
+    </script>
+</body>
+</html>
