@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.orders.findAll</h1>
+    <script type="module">
+        import { api } from "./app.js";
+        const order1 = await api.orders.findOne("cw3QGYEcaDoh1XUUAoEo");
+        const order2 = await api.orders.findOne("invalid");
+        console.log(order1);
+        console.log(order2);
+    </script>
+</body>
+</html>
