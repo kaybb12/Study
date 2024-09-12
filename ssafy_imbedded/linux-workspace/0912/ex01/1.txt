@@ -1,0 +1,18 @@
+//main.c
+#include<stdio.h>
+void blue();
+void pink();
+int main(){
+    blue();
+    pink();
+}
+//blue.c
+#include<stdio.h>
+void blue(){
+    printf("I’m blue\n");
+}
+//pink.c
+#include<stdio.h>
+void pink(){
+   printf("I’m pink\n");
+}
