@@ -1,0 +1,30 @@
+lG1VltWT_JGHTzGubaxw
+NyqIyfToym
+
+{
+    "startDate": "2024-01-01",
+    "endDate": "2024-09-10",
+    "timeUnit": "month",
+    "keywordGroups": [
+        {
+            "groupName": "티니핑",
+            "keywords": [
+                "티니핑",
+                "하츄핑"
+            ]
+        },
+        {
+            "groupName": "치킨",
+            "keywords": [
+                "후라이드",
+                "양념"
+            ]
+        }
+    ],
+    "device": "pc",
+    "ages": [
+        "1",
+        "2"
+    ],
+    "gender": "f"
+}
