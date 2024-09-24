@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+const char* months[12] = {
+	"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+	"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+};
+
+int month_to_number(const char* month) {
+    for (int i = 0; i < 12; i++) {
+        if (strcmp(month, months[i]) == 0) {
+            return i + 1;
+        }
+    }
+    return -1;
+}
+
+int main(){
+	FILE *fp = fopen("log.txt", "r");
+
+	char buf[1000];
+	char month_str[4];
+	int month, day, time;
+	int tops[3] = { 0, };
+	int hour[24] = { 0, };
+    int max1 = -1, max2 = -1, max3 = -1;
+    char logDatas[24][10000] = { "" };
+
+	while(fgets(buf, 1000, fp) != NULL) {
+        sscanf(buf, "%3s %d %d", month_str, &day, &time);
+        month = month_to_number(month_str);
+		//printf("%d %d %d\n", month, day, time);
+		hour[time]++;
+		strcpy(logDatas[time], buf);
+	}
+
+//	for (int i = 1; i < 24; ++i) {
+//		printf("%d ", hour[i]);
+//	}
+
+    for (int i = 0; i < 24; i++) {
+        if (hour[i] > max1) {
+            max3 = max2; tops[2] = tops[1];
+            max2 = max1; tops[1] = tops[0];
+            max1 = hour[i]; tops[0] = i;
+        } else if (hour[i] > max2) {
+            max3 = max2; tops[2] = tops[1];
+            max2 = hour[i]; tops[1] = i;
+        } else if (hour[i] > max3) {
+            max3 = hour[i]; tops[2] = i;
+        }
+    }
+
+//    for (int i = 0; i < 24; ++i) {
+//    	printf("%s \n", logDatas[i]);
+//    }
+
+    for (int i = 0; i < 3; ++i) {
+        printf("top %d: ", i + 1, tops[i]);
+        printf("%s\n", logDatas[tops[i]]);
+    }
+
+	fclose(fp);
+
+	return 0;
+}
