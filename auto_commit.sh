@@ -15,7 +15,7 @@ if [[ ! -d "$TARGET_DIR" ]]; then
   exit 1
 fi
 
-# 특정 파일 패턴 (예: .c, .cpp, .txt 파일만 커밋하고 싶을 때)
+# 특정 파일 패턴 (.c, .cpp, .txt 파일만 커밋하고 싶을 때)
 FILE_PATTERN="*.c *.cpp *.txt"
 
 # 현재 디렉토리에서 작업할 폴더 내의 특정 파일 재귀적 탐색
@@ -23,8 +23,15 @@ FILES=$(find "$TARGET_DIR" -type f \( -name "*.c" -o -name "*.cpp" -o -name "*.t
 
 # 각 파일에 대해 작업 수행
 for FILE in $FILES; do
-  # .git 디렉토리는 무시
-  if [[ $FILE == *"/.git/"* ]] || [[ $FILE == *"/.git"* ]]; then
+  # .git 디렉토리 또는 서브모듈 파일 무시
+  if [[ $FILE == *"/.git/"* ]] || [[ $FILE == *"/.git"* ]] || [[ $FILE == *"algo/JJH"* ]]; then
+    echo "Skipping submodule or .git directory: $FILE"
+    continue
+  fi
+
+  # 파일이 존재하는지 확인
+  if [[ ! -f "$FILE" ]]; then
+    echo "Warning: File $FILE does not exist. Skipping..."
     continue
   fi
 
