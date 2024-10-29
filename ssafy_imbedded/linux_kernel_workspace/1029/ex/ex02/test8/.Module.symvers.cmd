@@ -1,0 +1,1 @@
+savedcmd_/home/pi/workspace/1029/class/test8/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/pi/workspace/1029/class/test8/Module.symvers -T /home/pi/workspace/1029/class/test8/modules.order -i Module.symvers -e 
