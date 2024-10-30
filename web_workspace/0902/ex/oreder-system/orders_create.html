@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.orders.create</h1>
+    <input class="quantity-input" type="text" placeholder="주문수량" />
+    <br />
+    <input class="request-datail-input" type="text" placeholder="주문옵션" />
+    <br />
+    <input class="menu-id-input" type="text" placeholder="메뉴 ID" />
+    <br />
+    <button class="submit-btn">제출</button>
+    
+    <script type = "module">
+        import { api } from "./app.js";
+        const quantityInput = document.querySelector(".quantity-input");
+        const requestInput = document.querySelector(".request-datail-input");
+        const menuInput = document.querySelector(".menu-id-input");
+        const submitBtn = document.querySelector(".submit-btn");
+        console.log(quantityInput.value);
+        console.log(requestInput.value);
+        console.log(menuInput.value);
+        submitBtn.addEventListener("click", async () => {
+            await api.orders.create(
+                quantityInput.value,
+                requestInput.value,
+                menuInput.value,
+            );
+        });
+    </script>
+</body>
+</html>

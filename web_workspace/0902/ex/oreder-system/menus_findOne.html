@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.menus.findOne</h1>
+    <script type="module">
+        import { api } from "./app.js";
+        async function getMenu() {
+            const menu1 = await api.menus.findOne("OiiHkjDbdm9YlLEeZwOm");
+            const menu2 = await api.menus.findOne("inavalid");
+            console.log(menu1);
+            console.log(menu2);
+        }
+        getMenu();
+    </script>
+</body>
+</html>

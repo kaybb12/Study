@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>게시글 생성</h1>
+    <div class="input-group">
+        <div>
+            <input
+                class="title-input"
+                type="text"
+                placeholder="제목을 입력하세요"
+            />
+        </div>
+        <div>
+            <textarea
+                class="content-textarea"
+                placeholder="내용을 입력하세요"
+            ></textarea>
+        </div>
+        <button class="add-btn">등록</button>
+    </div>
+    <div>
+        <a href="./list.html">게시글 목록으로 돌아가기</a>
+    </div>
+    <div>
+        <a href="../index.html">홈</a>
+    </div>
+
+    <script type = "module">
+        import { createArticle, getArticles } from "./article.js";
+        const articles = await getArticles();
+        //console.log(articles);
+        if (articles === "permission-denied") {
+            alert("로그인이 필요합니다.")
+            location.href = "../auth/login.html";
+        }
+        const titleInput = document.querySelector(".title-input");
+        const contentTextarea = document.querySelector(".content-textarea");
+        const addBtn = document.querySelector(".add-btn");
+
+
+        addBtn.addEventListener("click", async () => {
+            if (
+                !titleInput.value ||
+                titleInput.value.trim() === "" ||
+                !contentTextarea.value ||
+                contentTextarea.value.trim() === ""
+            ) {
+                return;
+            }
+
+            const parsedTitle = titleInput.value.trim();
+            const parsedContent = contentTextarea.value.trim();
+            const result = await createArticle(parsedTitle, parsedContent);
+            alert("글 생성 성공");
+            console.log(result);
+            location.href = `./detail.html?id=${result}`;
+        });
+    </script>
+</body>
+</html>

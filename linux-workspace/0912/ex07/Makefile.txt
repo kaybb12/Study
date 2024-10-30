@@ -1,0 +1,11 @@
+CC = gcc
+CFLAGS = -o
+TARGET = ssafy_shell
+
+all: $(TARGET)
+
+$(TARGET): ssafy_shell.c
+        $(CC) $(CFLAGS) $(TARGET) ssafy_shell.c
+
+clean:
+        rm -f $(TARGET)

@@ -1,0 +1,1 @@
+savedcmd_/home/pi/workspace/1029/class/test8/devicedriver.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/pi/workspace/1029/class/test8/devicedriver.ko /home/pi/workspace/1029/class/test8/devicedriver.o /home/pi/workspace/1029/class/test8/devicedriver.mod.o;  true

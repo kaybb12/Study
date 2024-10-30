@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .card-container >div{
+            margin: 10px;
+            border: 1px solid black;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .card-container img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container"></div>
+    
+    <script>
+        const url = "https://fakestoreapi.com/products";
+        const cardContainer = document.querySelector(".card-container");
+        
+        async function getData() {
+            const result = await axios.get(url);
+            console.log(result);
+            console.log(result.data);
+            const html = result.data.reduce((acc, cur) => {
+                console.log(cur);
+                acc = acc + imageComponent(cur);
+                return acc;
+            }, "");
+
+            console.log(html);
+            cardContainer.insertAdjacentHTML('beforeend', html);
+        }
+        
+        getData();
+
+        function imageComponent(data) {
+            console.log(data);
+            return `
+            <div>
+                <div>title: ${data.title}</div>
+                <div>price: ${data.price}</div>
+                <img src = ${data.image}>
+            </div>
+            `
+        }
+
+    </script>
+</body>
+</html>

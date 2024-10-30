@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main(){
+
+	const char* p[3] = {
+	    "[000053.163123] MIN CO MIN CO MIN CO",
+	    "[004351.231231] EMBEDDED EM EM EM",
+	    "[123456.654321] HO HO HO KKK",
+	};
+
+
+	int second;
+	char message[100];
+	char res[30];
+	for (int  i= 0; i < 3; i++) {
+		sscanf(p[i], "[%d.%*f] %[^/\n]", &second, message);
+
+		sprintf(res, "%d sec : %s\n", second, message);
+		printf("%s", res);
+	}
+
+	return 0;
+}

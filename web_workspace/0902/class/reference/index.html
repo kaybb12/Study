@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEST</h1>
+    <input class="user-input-name" type="text" placeholder="새로운 직원 이름" />
+    <br />
+    <input class="user-input-dep-id" type="text" placeholder="부서 ID" />
+    <br />
+    <button class="create-btn">생성</button>
+    <input class="file-input" type="file" />
+    <br />
+    <button class="img-upload-btn">이미지 업로드</button>
+
+    <script type="module">
+        import {getMembers, getMember, createMember, uploadImage, } from "./member.js";
+        const members = await getMembers();
+        console.log(members);
+        const member = await getMember("j52nrnvLGzKbBIR6rAGA");
+        console.log(member);
+
+        const userInputName = document.querySelector(".user-input-name");
+        const userInputDepId = document.querySelector(".user-input-dep-id");
+        const createBtn = document.querySelector(".create-btn");
+        createBtn.addEventListener("click", async () => {
+        await createMember(userInputName.value, userInputDepId.value);
+        });
+        const fileInput = document.querySelector(".file-input");
+        const imgUploadBtn = document.querySelector(".img-upload-btn");
+        imgUploadBtn.addEventListener("click", async () => {
+            console.dir(fileInput.files);
+            await uploadImage(fileInput.files[0]);
+        });
+    </script>
+</body>
+</html>

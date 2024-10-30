@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <script>
+        const url = " https://jsonplaceholder.typicode.com/users/3"
+        axios.get(url).then((res) => {
+            console.log(res);
+            const id = res.data.id;
+            console.log(id);
+            const postUrl =  "https://jsonplaceholder.typicode.com/posts?userId=${id}";
+            axios.get(postUrl).then(result => {
+                console.log(result);
+            })
+        })
+        
+    </script>
+</body>
+</html>

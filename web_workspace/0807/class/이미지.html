@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .card-container >div{
+            margin: 10px;
+        }
+        .card-container img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- 반복되는 부분 -->
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+
+        const url = "https://picsum.photos/v2/list?page=1&limit=20";
+        const cardContainer = document.querySelector(".card-container");
+
+        async function getData() {
+            //await는 async 안에서만 활용가능
+            // await API1
+            // await API2
+            // axios.get(url).then(result =>{return ~})
+            const result = await axios.get(url);
+            console.log(result);
+            console.log(result.data);
+            const html = result.data.reduce((acc, cur) => {
+                console.log(cur);
+                acc = acc + imageComponent(cur);
+                return acc;
+            }, "");
+            console.log(html);
+            cardContainer.insertAdjacentHTML('beforeend', html);
+        }
+
+        getData();
+
+        function imageComponent(data) {
+            console.log(data);
+            // ${}
+            return `
+            <div>
+                <div>Author: ${data.author}</div>
+                <img src=${data.download_url} alt="">
+            </div>
+            `
+        }
+
+    </script>
+</body>
+</html>

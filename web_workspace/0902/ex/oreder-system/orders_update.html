@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.orders.update</h1>
+    <button>수정</button>
+    <script type="module">
+        import { api } from "./app.js";
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+            api.orders.update("7exZgUwqg2tqF26rS4Bf", "3", "샷 두개 추가", "ytB7s4kBzNT1Wu8bj8J0");
+        });
+    </script>
+</body>
+</html>

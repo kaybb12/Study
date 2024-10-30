@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.menus.findAll</h1>
+    <script type="module">
+        import { api } from "./app.js";
+        async function getMenus() {
+            const menus = await api.menus.findAll();
+            console.log(menus);
+            menus.forEach((menu) => {
+                console.log(`
+                    id: ${menu.id}
+                    name: ${menu.name}
+                    description: ${menu.description}
+                    image_file_name: ${menu.image_file_name}
+                    image_src: ${menu.image_src}
+                    ====================
+                `);
+            });
+        }
+    getMenus();
+    </script>
+</body>
+</html>

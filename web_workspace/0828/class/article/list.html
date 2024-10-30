@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>게시글 목록</h1>
+<ul class="article-ul">
+    <!-- <li>
+      <div>
+        <span>id: </span>
+        <span class="id-data">
+          <a href="#">id</a>
+        </span>
+      </div>
+      <div>
+        <span>title: </span>
+        <span class="title-data">title</span>
+      </div>
+    </li> -->
+</ul>
+<div>
+  <a href="./create.html">게시글 생성</a>
+</div>
+<div>
+  <button class="logout-btn">로그아웃</button>
+</div>
+<script type="module">
+    import { getArticles } from "./article.js";
+    import { logout } from "../auth/auth.js";
+    const articleUl = document.querySelector(".article-ul")
+    const articles = await getArticles();
+    const logoutBtn = document.querySelector(".logout-btn");
+    console.log(articles);
+    const articleComponents = articles.reduce((acc, article) => {
+        console.log(article);
+        acc += `
+            <li>
+            <div>
+                <span>id: </span>
+                <span class="id-data">
+                    <a href="./detail.html?id=${article.id}">${article.id}</a>
+                </span>
+            </div>
+            <div>
+                <span>title: </span>
+                <span class="title-data">${article.title}</span>
+            </div>
+            </li>
+        `
+        return acc;
+    }, "");
+
+    console.log(articleComponents);
+ 
+    articleUl.insertAdjacentHTML('beforeend', articleComponents);
+
+    logoutBtn.addEventListener("click", async () => {
+                await logout();
+                alert("로그아웃 성공");
+                location.href = "../index.html";
+    });
+</script>
+
+</body>
+</html>

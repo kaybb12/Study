@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>api.menus.updateImage</h1>
+    <input type="file" />
+    <br />
+    <button>이미지 수정</button>
+    <script type="module">
+        import { api } from "./app.js";
+        const fileInput = document.querySelector("input");
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", async () => {
+            const menu = await api.menus.findOne("wjwxd36UWzdBmF3PcMFr");
+            await api.menus.updateImage(menu, fileInput.files[0]);
+        });
+</script>
+</body>
+</html>

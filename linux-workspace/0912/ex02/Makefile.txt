@@ -1,0 +1,13 @@
+write :
+	@echo  “[write] 명령어 수행 중..”
+	@dd if=/dev/zero of=./dummy.dat bs=10M count=1
+	@“[write] 명령어 수행 완료”
+
+read :
+	@echo “[read] 명령어 수행 중..”
+	@dd if=./dummy.dat of=/dev/null bs=1024 
+	@echo “[read] 명령어 수행 완료”
+
+clean :
+	rm -r dummy.dat
+	@echo “[clean] 완료” 

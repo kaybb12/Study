@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 콜백 헬
+        // setTimeout(() => {
+        //     console.log("첫번째 작업 완료")
+        //     setTimeout(() => {
+        //         console.log("두번째 작업 완료")
+        //         setTimeout(() => {
+        //             console.log("세번쨰 작업 완료");
+        //         }, 1500);
+        //     }, 1000);
+        // }, 500);
+
+        function delay(ms, callback) {
+            if(ms < 0) {
+                callback(new Error("지연 시간은 양수 이어야합니다."), null)
+            }
+            else {
+                setTimeout(() => {
+                    callback(null, `${ms * 0.01} 초 후 완료`);
+                })
+            }
+        }
+
+        //호출
+
+        // delay(500, (error, result) => {
+        //     if(error){
+        //         console.error("오류 발생", error.message);
+        //     }
+        //     else {
+        //         console.log("첫번째 작업 완료 :", result);
+        //     }
+        // })
+
+        delay(500, (error, result) => {
+            if(error){
+                console.error("오류 발생", error.message);
+            }
+            else {
+                console.log("첫번째 작업 완료 :", result);
+
+                //두번째
+                delay(1000, (error, result) => {
+                    if(error){
+                    console.error("오류 발생", error.message);
+                }
+                else {
+                console.log("두번째 작업 완료 :", result);
+
+                //세번쨰
+                    delay(1500, (error, result) => {
+                        if(error){
+                        console.error("오류 발생", error.message);
+                    }
+                    else {
+                        console.log("두번째 작업 완료 :", result);
+                        }
+                    });
+                }
+            });
+        }
+        });
+
+    </script>
+</body>
+</html>
