@@ -15,34 +15,17 @@ if [[ ! -d "$TARGET_DIR" ]]; then
   exit 1
 fi
 
-# 특정 파일 패턴 (.c, .cpp, .txt 파일만 커밋하고 싶을 때)
-FILE_PATTERN="*.c *.cpp *.txt"
+# .git 디렉토리와 .exe 파일을 제외하고 모든 파일을 스테이징
+find "$TARGET_DIR" -type f ! -path "*/.git/*" ! -name "*.exe" -exec git add {} +
 
-# 현재 디렉토리에서 작업할 폴더 내의 특정 파일 재귀적 탐색
-FILES=$(find "$TARGET_DIR" -type f \( -name "*.c" -o -name "*.cpp" -o -name "*.txt" \) 2>/dev/null)
+# 모든 변경 사항을 스테이징
+git add -A
 
-# 각 파일에 대해 작업 수행
-for FILE in $FILES; do
-  # .git 디렉토리 또는 서브모듈 파일 무시
-  if [[ $FILE == *"/.git/"* ]] || [[ $FILE == *"/.git"* ]] || [[ $FILE == *"algo/JJH"* ]]; then
-    echo "Skipping submodule or .git directory: $FILE"
-    continue
-  fi
+# 변경 사항이 있는 경우에만 커밋
+if ! git diff --cached --quiet; then
+  git commit -m "Auto commit for all changes"
+fi
 
-  # 파일이 존재하는지 확인
-  if [[ ! -f "$FILE" ]]; then
-    echo "Warning: File $FILE does not exist. Skipping..."
-    continue
-  fi
-
-  # 파일의 마지막 수정 시간 가져오기
-  LAST_MODIFIED_DATE=$(stat -c "%y" "$FILE" 2>/dev/null)
-
-  # 파일을 스테이징하고 커밋
-  git add "$FILE"
-  GIT_AUTHOR_DATE="$LAST_MODIFIED_DATE" GIT_COMMITTER_DATE="$LAST_MODIFIED_DATE" git commit -m "Auto commit for $FILE with last modified date"
-done
-
-# 최종 커밋 이후에 푸시
+# 커밋 이후에 푸시
 git push origin master
 
