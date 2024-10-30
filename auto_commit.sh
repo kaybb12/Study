@@ -16,7 +16,7 @@ if [[ ! -d "$TARGET_DIR" ]]; then
 fi
 
 # .git 디렉토리와 .exe 파일을 제외하고 모든 파일을 스테이징
-find "$TARGET_DIR" -type f ! -path "*/.git/*" ! -name "*.exe" -exec git add {} +
+find "$TARGET_DIR" -type f ! -path "*/.git/*" ! -path "*/node_modules/*" ! -name "*.exe" -exec git add {} +
 
 # 모든 변경 사항을 스테이징
 git add -A
