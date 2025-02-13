@@ -1,0 +1,27 @@
+[01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:[m[K In constructor ‘[01m[KTwistPublisher::TwistPublisher()[m[K’:
+[01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kmsg[m[K’?
+    9 |          publisher_ = this->create_publisher<geometry_msgs::[01;31m[Kmsgs[m[K::Twist>("/turtle1/cmd_vel", 10);
+      |                                                             [01;31m[K^~~~[m[K
+      |                                                             [32m[Kmsg[m[K
+[01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+    9 |             publisher_ = this->[01;31m[Kcreate_publisher<geometry_msgs::msgs::Twist>[m[K("/turtle1/cmd_vel", 10);
+      |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTwistPublisher::create_publisher<<expression error> >(const char [17], int)[m[K’
+    9 | lisher_ = [01;31m[Kthis->create_publisher<geometry_msgs::msgs::Twist>("/turtle1/cmd_vel", 10)[m[K;
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+  195 |   [01;36m[Kcreate_publisher[m[K(
+      |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+    9 | lisher_ = [01;31m[Kthis->create_publisher<geometry_msgs::msgs::Twist>("/turtle1/cmd_vel", 10)[m[K;
+      |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/publisher_node.dir/build.make:76: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

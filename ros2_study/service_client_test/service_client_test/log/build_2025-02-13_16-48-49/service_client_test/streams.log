@@ -1,0 +1,67 @@
+[0.008s] Invoking command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[1.544s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:11:9:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KTelportClient[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[1.544s]    11 |         [01;31m[KTelportClient[m[K() : Node("client_test_node_cpp") {
+[1.544s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[1.576s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:[m[K In member function ‘[01m[Kint TeleportClient::TelportClient()[m[K’:
+[1.576s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:11:27:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+[1.576s]    11 |         TelportClient() : [01;31m[KNode[m[K("client_test_node_cpp") {
+[1.576s]       |                           [01;31m[K^~~~[m[K
+[1.578s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:25:58:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr rclcpp::Node::get_node_base_interface()[m[K’
+[1.578s]    25 |             if (rclcpp::spin_until_future_complete([01;31m[Kthis->get_node_base_interface[m[K) == rclcpp::FutureReuturnCode::SUCCESS) {
+[1.578s]       |                                                    [01;31m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.578s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.578s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.578s]                  from [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:1[m[K:
+[1.578s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1131:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.578s]  1131 |   [01;36m[Kget_node_base_interface[m[K();
+[1.579s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.579s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:25:94:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::FutureReuturnCode[m[K’ has not been declared
+[1.579s]    25 |             if (rclcpp::spin_until_future_complete(this->get_node_base_interface) == rclcpp::[01;31m[KFutureReuturnCode[m[K::SUCCESS) {
+[1.579s]       |                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.579s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:30:9:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+[1.579s]    30 |         [01;35m[K}[m[K
+[1.579s]       |         [01;35m[K^[m[K
+[1.866s] In file included from [01m[K/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[1.867s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[1.867s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[1.867s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[1.867s]                  from [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:1[m[K:
+[1.867s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = TeleportClient; _Args = {}; _Tp = TeleportClient][m[K’:
+[1.867s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = TeleportClient; _Args = {}; _Tp = TeleportClient; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<TeleportClient>][m[K’
+[1.867s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = TeleportClient; _Alloc = std::allocator<TeleportClient>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.867s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = TeleportClient; _Alloc = std::allocator<TeleportClient>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.867s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<TeleportClient>; _Args = {}; _Tp = TeleportClient; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[1.867s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<TeleportClient>; _Args = {}; _Tp = TeleportClient][m[K’
+[1.867s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = TeleportClient; _Alloc = std::allocator<TeleportClient>; _Args = {}][m[K’
+[1.868s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = TeleportClient; _Args = {}][m[K’
+[1.868s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:38:50:[m[K   required from here
+[1.868s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[KTeleportClient::TeleportClient()[m[K’
+[1.868s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[1.868s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.868s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:9:7:[m[K [01;36m[Knote: [m[K‘[01m[KTeleportClient::TeleportClient()[m[K’ is implicitly deleted because the default definition would be ill-formed:
+[1.868s]     9 | class [01;36m[KTeleportClient[m[K : public rclcpp::Node {
+[1.868s]       |       [01;36m[K^~~~~~~~~~~~~~[m[K
+[1.868s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:9:7:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[1.868s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.868s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.868s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.869s]                  from [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:1[m[K:
+[1.869s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[1.869s]  1294 |   [01;36m[KNode[m[K(
+[1.869s]       |   [01;36m[K^~~~[m[K
+[1.872s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1294:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.872s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[1.872s]   101 |   explicit [01;36m[KNode[m[K(
+[1.872s]       |            [01;36m[K^~~~[m[K
+[1.872s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:101:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[1.872s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[1.872s]    89 |   explicit [01;36m[KNode[m[K(
+[1.872s]       |            [01;36m[K^~~~[m[K
+[1.872s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:89:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[1.956s] gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
+[1.956s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/service_client.dir/all] Error 2
+[1.956s] gmake: *** [Makefile:146: all] Error 2
+[1.958s] Invoked command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16

@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16
+[0.059s] [35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[0.089s] [ 50%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[2.409s] [100%] [32m[1mLinking CXX executable service_client[0m
+[2.540s] [100%] Built target service_client
+[2.550s] Invoked command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16
+[2.563s] Invoking command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test
+[2.577s] -- Install configuration: ""
+[2.577s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/lib/service_client_test/service_client
+[2.578s] -- Set runtime path of "/home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/lib/service_client_test/service_client" to ""
+[2.578s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/ament_index/resource_index/package_run_dependencies/service_client_test
+[2.578s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/ament_index/resource_index/parent_prefix_path/service_client_test
+[2.578s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/environment/ament_prefix_path.sh
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/environment/ament_prefix_path.dsv
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/environment/path.sh
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/environment/path.dsv
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/local_setup.bash
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/local_setup.sh
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/local_setup.zsh
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/local_setup.dsv
+[2.579s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/package.dsv
+[2.580s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/ament_index/resource_index/packages/service_client_test
+[2.580s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/cmake/service_client_testConfig.cmake
+[2.580s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/cmake/service_client_testConfig-version.cmake
+[2.580s] -- Installing: /home/hycon/workspace/service_client_test/service_client_test/install/service_client_test/share/service_client_test/package.xml
+[2.582s] Invoked command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test

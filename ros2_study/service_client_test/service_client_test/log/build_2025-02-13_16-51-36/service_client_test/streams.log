@@ -1,0 +1,12 @@
+[0.010s] Invoking command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[0.069s] [ 50%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[1.571s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:[m[K In constructor ‘[01m[KTeleportClient::TeleportClient()[m[K’:
+[1.571s] [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:25:111:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::FutureReuturnCode[m[K’ has not been declared
+[1.571s]    25 | if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), result_future) == rclcpp::[01;31m[KFutureReuturnCode[m[K::SUCCESS) {
+[1.571s]       |                                                                                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.571s] 
+[1.964s] gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
+[1.964s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/service_client.dir/all] Error 2
+[1.964s] gmake: *** [Makefile:146: all] Error 2
+[1.966s] Invoked command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16

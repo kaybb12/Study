@@ -1,0 +1,7 @@
+[01m[K/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/src/subscriber_node.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[01m[K/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/src/subscriber_node.cpp:12:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+   12 |         [01;31m[K}[m[K
+      |         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/subscriber_node.dir/build.make:76: CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/subscriber_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

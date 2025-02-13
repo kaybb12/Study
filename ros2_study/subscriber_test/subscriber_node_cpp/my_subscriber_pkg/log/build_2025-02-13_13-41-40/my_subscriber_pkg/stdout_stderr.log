@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target subscriber_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable subscriber_node[0m
+[100%] Built target subscriber_node
+-- Install configuration: ""
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/lib/my_subscriber_pkg/subscriber_node
+-- Set runtime path of "/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/lib/my_subscriber_pkg/subscriber_node" to ""
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/package_run_dependencies/my_subscriber_pkg
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/parent_prefix_path/my_subscriber_pkg
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/ament_prefix_path.sh
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/ament_prefix_path.dsv
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/path.sh
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/path.dsv
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.bash
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.sh
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.zsh
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.dsv
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/package.dsv
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/packages/my_subscriber_pkg
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/cmake/my_subscriber_pkgConfig.cmake
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/cmake/my_subscriber_pkgConfig-version.cmake
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/package.xml

@@ -1,0 +1,10 @@
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/uninstall.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/publisher_make_test_uninstall.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/publisher_node.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/test.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/edit_cache.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/rebuild_cache.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/list_install_components.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/install.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/install/local.dir
+/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test/CMakeFiles/install/strip.dir

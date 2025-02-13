@@ -1,0 +1,16 @@
+[0.008s] Invoking command in '/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg -- -j16 -l16
+[0.058s] [35m[1mConsolidate compiler generated dependencies of target subscriber_node[0m
+[0.071s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o[0m
+[1.735s] [01m[K/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/src/subscriber_node.cpp:[m[K In constructor ‘[01m[KMinimalSubscriber::MinimalSubscriber()[m[K’:
+[1.735s] [01m[K/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/src/subscriber_node.cpp:11:109:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before numeric constant
+[1.735s]    11 |                 "/turtle1/pose", 10, std::bind(&MinimalSubscriber::topic_callback, this, std::placeholders::[01;31m[K1[m[K))
+[1.735s]       |                                                                                                             [01;31m[K^[m[K
+[1.741s] [01m[K/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/src/subscriber_node.cpp:[m[K In member function ‘[01m[Kvoid MinimalSubscriber::topic_callback(turtlesim::msg::Pose_<std::allocator<void> >::SharedPtr) const[m[K’:
+[1.741s] [01m[K/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/src/subscriber_node.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[KRCLCPP_IMFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+[1.741s]    18 |         [01;31m[KRCLCPP_IMFO[m[K(this->get_logger(), "/turtle1/pose: x = %.2f, y = %.s2f, theta = %.2f", msg->x, msg->y, msg->theta);
+[1.741s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[1.742s]       |         [32m[KRCLCPP_INFO[m[K
+[2.051s] gmake[2]: *** [CMakeFiles/subscriber_node.dir/build.make:76: CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o] Error 1
+[2.051s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/subscriber_node.dir/all] Error 2
+[2.052s] gmake: *** [Makefile:146: all] Error 2
+[2.054s] Invoked command in '/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg -- -j16 -l16

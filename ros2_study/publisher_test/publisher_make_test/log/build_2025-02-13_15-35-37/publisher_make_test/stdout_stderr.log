@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target publisher_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable publisher_node[0m
+[100%] Built target publisher_node
+-- Install configuration: ""
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/lib/publisher_make_test/publisher_node
+-- Set runtime path of "/home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/lib/publisher_make_test/publisher_node" to ""
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/ament_index/resource_index/package_run_dependencies/publisher_make_test
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/ament_index/resource_index/parent_prefix_path/publisher_make_test
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/ament_prefix_path.sh
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/ament_prefix_path.dsv
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/path.sh
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/path.dsv
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.bash
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.sh
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.zsh
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.dsv
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/package.dsv
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/ament_index/resource_index/packages/publisher_make_test
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/cmake/publisher_make_testConfig.cmake
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/cmake/publisher_make_testConfig-version.cmake
+-- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/package.xml

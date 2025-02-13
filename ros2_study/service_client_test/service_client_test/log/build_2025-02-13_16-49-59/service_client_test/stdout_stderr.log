@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target service_client[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/service_client.dir/src/service_client.cpp.o[0m
+[01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:[m[K In constructor ‘[01m[KTeleportClient::TeleportClient()[m[K’:
+[01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:25:58:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr rclcpp::Node::get_node_base_interface()[m[K’
+   25 |             if (rclcpp::spin_until_future_complete([01;31m[Kthis->get_node_base_interface[m[K) == rclcpp::FutureReuturnCode::SUCCESS) {
+      |                                                    [01;31m[K~~~~~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1131:3:[m[K [01;36m[Knote: [m[Kdeclared here
+ 1131 |   [01;36m[Kget_node_base_interface[m[K();
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/hycon/workspace/service_client_test/service_client_test/src/service_client.cpp:25:94:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::FutureReuturnCode[m[K’ has not been declared
+   25 |             if (rclcpp::spin_until_future_complete(this->get_node_base_interface) == rclcpp::[01;31m[KFutureReuturnCode[m[K::SUCCESS) {
+      |                                                                                              [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/service_client.dir/build.make:76: CMakeFiles/service_client.dir/src/service_client.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/service_client.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

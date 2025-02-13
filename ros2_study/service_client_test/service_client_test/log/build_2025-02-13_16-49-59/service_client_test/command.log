@@ -1,0 +1,2 @@
+Invoking command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16
+Invoked command in '/home/hycon/workspace/service_client_test/service_client_test/build/service_client_test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/service_client_test/service_client_test/build/service_client_test -- -j16 -l16

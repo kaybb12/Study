@@ -1,0 +1,26 @@
+[0.008s] Invoking command in '/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg -- -j16 -l16
+[0.064s] [35m[1mConsolidate compiler generated dependencies of target subscriber_node[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/subscriber_node.dir/src/subscriber_node.cpp.o[0m
+[5.475s] [100%] [32m[1mLinking CXX executable subscriber_node[0m
+[5.743s] [100%] Built target subscriber_node
+[5.752s] Invoked command in '/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg -- -j16 -l16
+[5.763s] Invoking command in '/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg
+[5.771s] -- Install configuration: ""
+[5.771s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/lib/my_subscriber_pkg/subscriber_node
+[5.774s] -- Set runtime path of "/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/lib/my_subscriber_pkg/subscriber_node" to ""
+[5.774s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/package_run_dependencies/my_subscriber_pkg
+[5.774s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/parent_prefix_path/my_subscriber_pkg
+[5.774s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/ament_prefix_path.sh
+[5.774s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/ament_prefix_path.dsv
+[5.774s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/path.sh
+[5.774s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/path.dsv
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.bash
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.sh
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.zsh
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.dsv
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/package.dsv
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/packages/my_subscriber_pkg
+[5.775s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/cmake/my_subscriber_pkgConfig.cmake
+[5.776s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/cmake/my_subscriber_pkgConfig-version.cmake
+[5.776s] -- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/package.xml
+[5.777s] Invoked command in '/home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/build/my_subscriber_pkg

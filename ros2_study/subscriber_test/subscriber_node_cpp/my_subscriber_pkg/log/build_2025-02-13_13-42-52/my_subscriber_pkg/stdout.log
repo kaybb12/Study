@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target subscriber_node[0m
+[100%] Built target subscriber_node
+-- Install configuration: ""
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/lib/my_subscriber_pkg/subscriber_node
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/package_run_dependencies/my_subscriber_pkg
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/parent_prefix_path/my_subscriber_pkg
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/ament_prefix_path.sh
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/path.sh
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/environment/path.dsv
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.bash
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.sh
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.zsh
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/local_setup.dsv
+-- Installing: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/package.dsv
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/ament_index/resource_index/packages/my_subscriber_pkg
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/cmake/my_subscriber_pkgConfig.cmake
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/cmake/my_subscriber_pkgConfig-version.cmake
+-- Up-to-date: /home/hycon/workspace/subscriber_test/subscriber_node_cpp/my_subscriber_pkg/install/my_subscriber_pkg/share/my_subscriber_pkg/package.xml

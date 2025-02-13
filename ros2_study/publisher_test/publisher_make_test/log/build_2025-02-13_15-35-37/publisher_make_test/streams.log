@@ -1,0 +1,26 @@
+[0.007s] Invoking command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test -- -j16 -l16
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target publisher_node[0m
+[0.074s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o[0m
+[2.838s] [100%] [32m[1mLinking CXX executable publisher_node[0m
+[2.977s] [100%] Built target publisher_node
+[2.989s] Invoked command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test -- -j16 -l16
+[3.005s] Invoking command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test
+[3.013s] -- Install configuration: ""
+[3.013s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/lib/publisher_make_test/publisher_node
+[3.013s] -- Set runtime path of "/home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/lib/publisher_make_test/publisher_node" to ""
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/ament_index/resource_index/package_run_dependencies/publisher_make_test
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/ament_index/resource_index/parent_prefix_path/publisher_make_test
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/ament_prefix_path.sh
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/ament_prefix_path.dsv
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/path.sh
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/environment/path.dsv
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.bash
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.sh
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.zsh
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/local_setup.dsv
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/package.dsv
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/ament_index/resource_index/packages/publisher_make_test
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/cmake/publisher_make_testConfig.cmake
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/cmake/publisher_make_testConfig-version.cmake
+[3.014s] -- Installing: /home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test/share/publisher_make_test/package.xml
+[3.016s] Invoked command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test

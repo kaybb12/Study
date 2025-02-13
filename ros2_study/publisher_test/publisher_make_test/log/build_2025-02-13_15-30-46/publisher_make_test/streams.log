@@ -1,0 +1,90 @@
+[0.013s] Invoking command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hycon/workspace/publisher_test/publisher_make_test -DCMAKE_INSTALL_PREFIX=/home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test
+[0.118s] -- The C compiler identification is GNU 11.4.0
+[0.183s] -- The CXX compiler identification is GNU 11.4.0
+[0.190s] -- Detecting C compiler ABI info
+[0.250s] -- Detecting C compiler ABI info - done
+[0.256s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.256s] -- Detecting C compile features
+[0.257s] -- Detecting C compile features - done
+[0.260s] -- Detecting CXX compiler ABI info
+[0.361s] -- Detecting CXX compiler ABI info - done
+[0.367s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.367s] -- Detecting CXX compile features
+[0.368s] -- Detecting CXX compile features - done
+[0.373s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.552s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.624s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.655s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.658s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.664s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.674s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.685s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.716s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.718s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.842s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.873s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.903s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.909s] -- Looking for pthread.h
+[0.995s] -- Looking for pthread.h - found
+[0.995s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.082s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.083s] -- Found Threads: TRUE  
+[1.125s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.136s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.191s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.191s] -- Configured cppcheck include dirs: 
+[1.191s] -- Configured cppcheck exclude dirs and/or files: 
+[1.192s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.193s] -- Added test 'lint_cmake' to check CMake code style
+[1.194s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.197s] -- Added test 'uncrustify' to check C / C++ code style
+[1.197s] -- Configured uncrustify additional arguments: 
+[1.198s] -- Added test 'xmllint' to check XML markup files
+[1.199s] -- Configuring done
+[1.200s] [33mCMake Warning (dev) at CMakeLists.txt:16 (add_executable):
+[1.200s]   Policy CMP0115 is not set: Source file extensions must be explicit.  Run
+[1.201s]   "cmake --help-policy CMP0115" for policy details.  Use the cmake_policy
+[1.201s]   command to set the policy and suppress this warning.
+[1.201s] 
+[1.201s]   File:
+[1.201s] 
+[1.201s]     /home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp
+[1.201s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.201s] [0m
+[1.204s] -- Generating done
+[1.207s] -- Build files have been written to: /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test
+[1.213s] Invoked command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/hycon/workspace/publisher_test/publisher_make_test -DCMAKE_INSTALL_PREFIX=/home/hycon/workspace/publisher_test/publisher_make_test/install/publisher_make_test
+[1.215s] Invoking command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test -- -j16 -l16
+[1.287s] [ 50%] [32mBuilding CXX object CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o[0m
+[2.859s] [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:[m[K In constructor ‘[01m[KTwistPublisher::TwistPublisher()[m[K’:
+[2.859s] [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsgs[m[K’ is not a member of ‘[01m[Kgeometry_msgs[m[K’; did you mean ‘[01m[Kmsg[m[K’?
+[2.859s]     9 |          publisher_ = this->create_publisher<geometry_msgs::[01;31m[Kmsgs[m[K::Twist>("/turtle1/cmd_vel", 10);
+[2.859s]       |                                                             [01;31m[K^~~~[m[K
+[2.859s]       |                                                             [32m[Kmsg[m[K
+[2.859s] [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:32:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.859s]     9 |             publisher_ = this->[01;31m[Kcreate_publisher<geometry_msgs::msgs::Twist>[m[K("/turtle1/cmd_vel", 10);
+[2.859s]       |                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.859s] [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:76:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KTwistPublisher::create_publisher<<expression error> >(const char [17], int)[m[K’
+[2.859s]     9 | lisher_ = [01;31m[Kthis->create_publisher<geometry_msgs::msgs::Twist>("/turtle1/cmd_vel", 10)[m[K;
+[2.859s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.859s] 
+[2.859s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.859s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.859s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.860s]                  from [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:1[m[K:
+[2.860s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.860s]   195 |   [01;36m[Kcreate_publisher[m[K(
+[2.860s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.860s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.860s] [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:9:76:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.860s]     9 | lisher_ = [01;31m[Kthis->create_publisher<geometry_msgs::msgs::Twist>("/turtle1/cmd_vel", 10)[m[K;
+[2.860s]       |           [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.860s] 
+[2.860s] [01m[K/home/hycon/workspace/publisher_test/publisher_make_test/src/publisher_node.cpp:11:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass TwistPublisher[m[K’ has no member named ‘[01m[Kcreate_wall_time[m[K’; did you mean ‘[01m[Kcreate_wall_timer[m[K’?
+[2.860s]    11 |             timer_ = this->[01;31m[Kcreate_wall_time[m[K(
+[2.860s]       |                            [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.860s]       |                            [32m[Kcreate_wall_timer[m[K
+[3.205s] gmake[2]: *** [CMakeFiles/publisher_node.dir/build.make:76: CMakeFiles/publisher_node.dir/src/publisher_node.cpp.o] Error 1
+[3.205s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/publisher_node.dir/all] Error 2
+[3.205s] gmake: *** [Makefile:146: all] Error 2
+[3.207s] Invoked command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test -- -j16 -l16

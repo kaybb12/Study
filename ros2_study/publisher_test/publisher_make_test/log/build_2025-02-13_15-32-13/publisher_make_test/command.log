@@ -1,0 +1,2 @@
+Invoking command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test -- -j16 -l16
+Invoked command in '/home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/hycon/workspace/publisher_test/publisher_make_test/build/publisher_make_test -- -j16 -l16
